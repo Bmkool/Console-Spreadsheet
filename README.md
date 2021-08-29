@@ -9,4 +9,4 @@ Run: `cmake -B build -S . && make -C build`
 
 # Running
 
-Unit Tests: `./build/checkout_tests`
+Unit Tests: `./build/tests`
