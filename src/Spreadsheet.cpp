@@ -106,7 +106,7 @@ static bool processFormula(unsigned int row, unsigned int col, std::vector<std::
     // Add current entry to processing stack
     callStack.insert({row, col});
 
-    // Should always be an odd number of tokens [int(,op,int)+)
+    // Should always be an odd number of tokens [int(,op,int)+]
     if ((tokens.size() & 1) == 0) {
         std::cerr << "Invalid Formula: '" << spreadsheet[row][col] << "'" << std::endl; 
         callStack.erase({row, col});;
