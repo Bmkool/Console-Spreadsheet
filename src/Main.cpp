@@ -23,13 +23,3 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-
-/*
- * - Read input file
- * - Read through entire file, input into 2d vector
- * - Loop through each element and compute output string
- *  - If formula containing reference, go to reference and complete that one first
- *  - If circular reference then print error
- *  - Check for NAN
- * - Loop through vector to print output string
-*/
