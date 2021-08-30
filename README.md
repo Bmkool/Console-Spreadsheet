@@ -9,4 +9,6 @@ Run: `cmake -B build -S . && make -C build`
 
 # Running
 
+Application: `./build/console_spreadsheet <input_file>`
+
 Unit Tests: `./build/tests`
