@@ -13,16 +13,14 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 # Configure Unit Tests
-set(TEST_SRC_FILES  unit-tests/Tests.cpp
-                    src/Spreadsheet.cpp
-)
+set(TEST_SRC_FILES  unit-tests/Tests.cpp)
 add_executable(tests ${TEST_SRC_FILES})
 target_link_libraries(tests gtest_main)
-target_compile_options(tests PRIVATE -Wall -Wextra)
+target_compile_options(tests PRIVATE -Wall -Wextra -g)
 
 # Configure Spreadsheet Application
 set(SRC_FILES  src/Spreadsheet.cpp
                src/Main.cpp
 )
 add_executable(console_spreadsheet ${SRC_FILES})
-target_compile_options(console_spreadsheet PRIVATE -Wall -Wextra)
+target_compile_options(console_spreadsheet PRIVATE -Wall -Wextra -g)
